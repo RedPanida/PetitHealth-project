@@ -8,7 +8,7 @@
 }
 body{
     /* background-color: #E4623C; */
-    background-color: #F4F0EC !important;
+    
     font-family: 'mn_mini' !important;
 }
 header{
@@ -19,6 +19,10 @@ header{
     background: rgb(15,229,181);
     background: linear-gradient(180deg, rgba(15,229,181,1) 0%, rgba(45,182,151,0.26) 95%, rgba(45,182,151,0) 100%);
     z-index: 10;
+}
+.content{
+    background: rgb(23,255,213) !important;
+    background: linear-gradient(180deg, rgba(23,255,213,0) 0%, rgba(81,178,233,0.74) 100%) !important;
 }
 .logo{
     width: 50%;
@@ -101,6 +105,10 @@ header{
     margin-top: 106px !important; 
     font-size: 32px;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .bannerHeadT{
     font-size: 53px;
@@ -121,7 +129,7 @@ header{
     border-color: #fff;
     /* margin-top: 40px; */
     transition: 0.5s;
-    font-size: 22px;
+    font-size: 20px;
     padding-top: 10px;
 }
 .bannerBtn p{
@@ -132,22 +140,28 @@ header{
     border-color: #516AE9;
     transition: 0.5s;
 }
-.service{
-    width: 300px;
-    height: 87px;
+.serviceBtn{
+    width: 322px;
+    height: 104px;
     background-color: white;
     border-radius: 10px;
-    border:solid 3px #E4623C;
-    font-size: 20px;
+    border:solid 3px #088D6F;
+    font-size: 28px;
 }
-.service:hover{
-    background-color: #F8CD51;
-    border: solid 3px #F8CD51;
+.serviceBtn:hover{
+    background-color: #088D6F;
+    border: solid 3px #fff;
     transition: 0.3s;
 }
 .serviceH{
+    display: flex;
+    align-items: flex-start;
     text-decoration: none;
-    color: #000;
+    color: #088D6F;
+}
+.serviceH:hover{
+    color: #fff;
+    transition: 0.3s;
 }
 .article{
     width: 300px;
@@ -158,7 +172,7 @@ header{
 .footer{
     width: auto;
     height: 77px;
-    background-color: #2E86C1;
+    background-color: #535FBF;
 }
 .logoFooter{
     width: auto;
