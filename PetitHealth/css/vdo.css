@@ -1,0 +1,433 @@
+.headVdo{
+  font-size: 30px;
+  color: #000;
+}
+.appointText{
+  font-size: 32px;
+  color: #000;
+}
+.hospitalName{
+  color: #000;
+  font-size: 28px;
+}
+.detailH{
+  color: #000;
+  font-size: 22px;
+}
+.meet{
+  margin-top: 50px !important;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.meetBtn{
+  width: 200px;
+  height: 50px;
+  color: #030C4A;
+  background-color: #F4F0EC;
+  border: solid 3px #E4623C;
+  border-radius: 7px;
+}
+.meetBtn:hover{
+  color: white;
+  background-color: #030C4A;
+  border: solid 3px #030C4A;
+  transition: 0.3s;
+}
+.historyH{
+  color: #696969 !important;
+}
+.historyDetail p {
+  color: #696969;
+}
+.bookingBtn{
+  width: 300px;
+  height: auto;
+  padding: 15px;
+  font-size: 25px;
+  background-color: #2E86C1;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+.bookingBtn:hover{
+  background-color: #030C4A;
+  transition: 0.3s;
+}
+.bookingBtn a {
+  text-decoration: none;
+  color: white;
+}
+/* option1 */
+.select-menu{
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.select{
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 60px;
+  background: #fff;
+  border: solid 3px #E4623C;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #030C4A;
+}
+/* .select-menu span{
+  font-size: 25px;
+} */
+.select-menu i{
+  float: right;
+  font-size: 30px;
+  color: #030C4A;
+}
+.option-list{
+  /* position: absolute; */
+  width: 100%;
+  background-color: #fff;
+  border: solid 3px #E4623C;
+  border-radius: 0 0 10px 10px;
+  transition: .3s linear .1s;
+  overflow-y: auto;
+  height: 0;
+  color: #030C4A;
+  /* z-index: 1; */
+}
+.option{
+  padding: 15px 10px 15px 10px;
+  /* font-size: 25px; */
+  transition: .3s ease-in-out;
+}
+.option:hover{
+  background-color: #F4F0EC;
+}
+.option-list.active{
+  height: 200px;
+}
+
+/* option2 */
+.select-menuT{
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  color: #030C4A;
+}
+.selectT{
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 60px;
+  background: #fff;
+  border: solid 3px #E4623C;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #030C4A;
+}
+.select-menuT span{
+  font-size: 25px;
+}
+.select-menuT i{
+  float: right;
+  /* font-size: 30px; */
+  color: #030C4A;
+}
+.option-listT{
+  /* position: absolute; */
+  width: 100%;
+  background-color: #fff;
+  border: solid 3px #E4623C;
+  border-radius: 0 0 10px 10px;
+  transition: .3s linear .1s;
+  overflow-y: auto;
+  height: 0;
+  /* z-index: 1; */
+}
+.optionT{
+  padding: 15px 10px 15px 10px;
+  /* font-size: 25px; */
+  transition: .3s ease-in-out;
+}
+.optionT:hover{
+  background-color: #FFF4CF;
+}
+.option-listT.active{
+  height: 200px;
+}
+
+/* vetchoose */
+#box{
+  /* margin-top: 20px; */
+  display: none;
+}
+.vetSelf{
+  font-size: 25px;
+  padding-left: 40px;
+  color: #030C4A;
+}
+.choose{
+  padding: 10px;
+}
+.vet input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: solid 2px #E4623C;
+  cursor: pointer;
+}
+.vet:hover input ~ .checkmark{
+  background-color: #fff;
+}
+.vet input:checked ~ .checkmark {
+  background-color: #fff;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.vet input:checked ~ .checkmark:after {
+  display: block;
+}
+.vet .checkmark:after {
+  top: 2px;
+  left: 2px;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: #E4623C;
+}
+.preBt{
+  width: 200px;
+  height: 60px;
+  border: solid 3px #E4623C;
+  border-radius: 10px;
+  font-size: 24px;
+  background-color: transparent;
+}
+.preBt a{
+  color: #030C4A;
+  text-decoration: none;
+}
+.nextBt{
+  width: 200px;
+  height: 60px;
+  border: solid 3px #E4623C;
+  border-radius: 10px;
+  font-size: 24px;
+  background-color: #fff;
+  float: right;
+}
+.nextBt a{
+  color: #030C4A;
+  text-decoration: none;
+}
+
+/* optionpet */
+.select-menuP{
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  color: #030C4A;
+}
+.selectP{
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 60px;
+  background: #fff;
+  border: solid 3px #E4623C;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #030C4A;
+}
+/* .select-menuP span{
+  font-size: 25px;
+} */
+.select-menuP i{
+  float: right;
+  font-size: 30px;
+  color: #030C4A;
+}
+.optionP-list{
+  /* position: absolute; */
+  width: 100%;
+  background-color: #fff;
+  border: solid 3px #E4623C;
+  border-radius: 0 0 10px 10px;
+  transition: .3s linear .1s;
+  overflow-y: auto;
+  height: 0;
+  /* z-index: 1; */
+}
+.optionP{
+  padding: 15px 10px 15px 10px;
+  font-size: 25px;
+  transition: .3s ease-in-out;
+}
+.optionP:hover{
+  background-color: #FFF4CF;
+}
+.optionP-list.active{
+  height: 200px;
+}
+
+/* optionpayment */
+.select-menuPm{
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  color: #030C4A;
+}
+.selectPm{
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 60px;
+  background: #fff;
+  border: solid 3px #E4623C;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #030C4A;
+}
+/* .select-menuPm span{
+  font-size: 25px;
+} */
+.select-menuPm i{
+  float: right;
+  font-size: 30px;
+  color: #030C4A;
+}
+.optionPm-list{
+  /* position: absolute; */
+  width: 100%;
+  background-color: #fff;
+  border: solid 3px #E4623C;
+  border-radius: 0 0 10px 10px;
+  transition: .3s linear .1s;
+  overflow-y: auto;
+  height: 0;
+  /* z-index: 1; */
+}
+.optionPm{
+  padding: 15px 10px 15px 10px;
+  /* font-size: 25px; */
+  transition: .3s ease-in-out;
+}
+.optionPm:hover{
+  background-color: #FFF4CF;
+}
+.optionPm-list.active{
+  height: 200px;
+}
+.detailT{
+  color: #030C4A;
+  font-size: 25px;
+}
+.totalT{
+  color: #030C4A;
+  font-size: 30px;
+}
+.appointDateTime{
+  font-size: 28px;
+}
+.appointTime{
+  font-size: 24px;
+}
+.period{
+  font-size: 22px;
+  font-weight: bold;
+}
+.timeBtn{
+  width: 149px;
+  height: 40px;
+  border: solid 2px #E4623C;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.timeBtn:hover{
+  background-color: #fff;
+}
+
+@media (max-width: 800px) {
+  .headVdo{
+    font-size: 20px;
+  }
+  .appointText{
+    font-size: 18px;
+  }
+  .hospitalName{
+    font-size: 15px;
+    padding-top: 15px;
+  }
+  .detailH{
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .fa-caret-down{
+    font-size: 15px !important;
+  }
+  .meetBtn{
+    width: 125px;
+    height: 27px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .preBt,
+  .nextBt {
+    width: 125px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .bookingBtn{
+    width: 155px;
+    height: 39px;
+    padding: 0;
+  }
+  .bookingBtn a{
+    font-size: 15px;
+  }
+  .option-list.active{
+    height: 200px;
+  }
+  .optionP-list.active{
+    height: 150px;
+  }
+  .appointTime{
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .period{
+    font-size: 12px;
+  }
+  .appointDateTime{
+    font-size: 15px;
+  }
+  .timeBtn{
+    width: 87px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .optionPm-list{
+    height: 0;
+  }
+  .optionPm-list.active{
+    height: 150px;
+  }
+}

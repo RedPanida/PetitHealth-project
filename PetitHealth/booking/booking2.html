@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/vdo.css">
+  <link rel="stylesheet" href="../css/booking.css">
+  <link rel="stylesheet" href="../css/fontSize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Patit Health</title>
+</head>
+<body>
+
+  <header>
+    <nav class="head navbar navbar-expand-lg">
+      <div class="container">
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img class="logo col-lg-2 col-sm-8" src="../img/logo.png" alt="">
+        <div class="col-lg-10 text-center navbar-collapse collapse" id="navbarTogglerDemo03">
+          <ul class="catgories navbar-nav me-auto mb-2 mb-lg-0 gy-2">
+            <div class="cate col-lg-2 pt-2">
+              <li class="nav-item">
+                <a class="header2 nav-link" href="../index.html">หน้าหลัก</a></li>
+            </div>
+            <div class="cate col-lg-3 pt-2 nav-item dropdown ">
+              <a class="header2 text-white text-decoration-none nav-link text-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">นัดหมายสัตวแพทย์ 
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <div class="bookingDropContent dropdown-menu">
+                <a class="header2 ps-2 dropdown-item" href="../vdocall/vdocall.html">จองวิดีโอคอลกับสัตวแพทย์</a>
+                <a class="header2 ps-2 dropdown-item" href="../booking/booking.html">จองคิวสัตวแพทย์มาที่บ้าน</a>
+              </div>            
+            </div>
+            <div class="cate col-lg-3 pt-2 nav-item dropdown ">
+              <a class="header2 text-white text-decoration-none nav-link text-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">ความรู้จากสัตวแพทย์ 
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <div class="bookingDropContent dropdown-menu">
+                <a class="header2 ps-2 dropdown-item" href="../article/article.html">ความรู้จากสัตวแพทย์</a>
+                <a class="header2 ps-2 dropdown-item" href="../article/article-like.html">ความรู้ที่ถูกใจ</a>
+              </div>            
+            </div>
+            <div class="cate col-lg-2 pt-2">
+              <li class="nav-item">
+                <a class="header2 nav-link" href="#">สำหรับสัตวแพทย์</a>
+              </li>
+            </div>
+            <div class="col-lg-2™ nav-item navbar-collapse collapse show regis">
+              <!-- <button class="nav-link regisBtn header2" type="button">ลงชื่อเข้าใช้</button> -->
+              <p class="header2 user mt-3">ปณิดา จ.</p>
+            </div>
+          </ul>  
+        </div>     
+      </div>
+    </nav>
+  </header>
+
+  <div>
+    <p class="mt-5 text-center headVdo">จองคิวสัตวแพทย์มาที่บ้าน</p>
+
+    <div class="container mt-4">
+      <div class="row mt-5">
+        <div class="col-lg-4 col-sm-12">
+          <p class="hospitalName">เลือกโรงพยาบาลสัตว์</p>
+        </div>
+      
+         <div>
+          <div class="select-menu mt-3"">
+            <div class="select">
+              <p class="detailH">เลือกโรงพยาบาลสัตว์ที่คุณต้องการ</p>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="option-list" onchange="change()">
+              <div class="detailH option">โรงพยาบาลสัตว์A</div>
+              <div class="detailH option">โรงพยาบาลสัตว์B</div>
+              <div class="detailH option">โรงพยาบาลสัตว์C</div>
+              <div class="detailH option">โรงพยาบาลสัตว์D</div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      
+    <p class="appointDateTime mt-4">จองวันและเวลา</p>
+
+      <div class="container row">
+        <div class="col-lg-6 col-sm-12">
+          <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+            <input placeholder="ปปปป-ดด-วว" type="text" id="exampleDate" class="form-control exampleDate">
+            <!-- <label for="example">Try me...</label> -->
+            <!-- <i class="fas fa-calendar input-prefix"></i> -->
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12">
+          <div>
+            <p class="appointTime">เลือกช่วงเวลาที่นัดหมาย</p>
+            <div class="row">
+              <p class="period">ช่วงเช้า</p>
+              <div class="col-4">
+                <button class="timeBtn" type="button">
+                  9.00 - 10.00
+                </button>
+              </div>
+              <div class="col-4">
+                <button class="timeBtn" type="button">
+                  10.00 - 11.00
+                </button>
+              </div>
+              <div class="col-4">
+               
+              </div>
+            </div>
+            <div class="row mt-3">
+              <p class="period">ช่วงเที่ยง</p>
+              <div class="col-4">
+                <button class="timeBtn" type="button">
+                  12.00 - 13.00
+                </button>
+              </div>
+              <div class="col-4">
+                <button class="timeBtn" type="button">
+                  13.00 - 14.00
+                </button>
+              </div>
+              <div class="col-4">
+               <button class="timeBtn" type="button" disabled>
+                  15.00 - 16.00
+                </button>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <p class="period">ช่วงเย็น</p>
+              <div class="col-4">
+                <button class="timeBtn" type="button">
+                  16.00 - 17.00
+                </button>
+              </div>
+              <div class="col-4">
+                <button class="timeBtn" type="button" disabled>
+                  17.00 - 18.00
+                </button>
+              </div>
+              <div class="col-4">
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+     <div class="row" style="margin-top: 100px;">
+       <div class="col-4">
+        <button class="preBt">
+          <a href="./booking.html">ย้อนกลับ</a>
+        </button>
+       </div>
+       <div class="col-4">
+
+       </div>
+       <div class="col-4">
+        <button class="nextBt">
+          <a href="./booking3.html">ต่อไป</a>
+        </button>
+       </div>
+      </div>
+     </div>
+  </div>
+
+  <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <img class="logoFooter" src="../img/logo.png">
+          </div>
+          <div class="col-2">
+
+          </div>
+          <div class="col-6 d-flex justify-content-end">
+            <p class="mt-3 creditDesktop title1">© copyright senior project 2022</p>
+            <p class="creditMobile subtitle3M">© copyright senior project 2022</p>
+          </div>   
+        </div>
+      </div>  
+    </footer>
+
+    <script>
+      const select = document.querySelector(".select");
+      const option_list = document.querySelector(".option-list");
+      const option = document.querySelectorAll(".option")
+      
+      //open option
+      select.addEventListener("click", () => {
+        option_list.classList.toggle("active");
+      });
+
+      //choose option
+      option.forEach((options) => {
+        options.addEventListener("click", () =>{
+          option.forEach((option) => {options.classList.remove('selected')});
+          select.querySelector("span").innerHTML = options.innerHTML;
+          options.classList.add("selected")
+          option_list.classList.toggle("active");
+        });
+      });
+    </script>
+      
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin=" anonymous "
+    referrerpolicy="no-referrer "
+    ></script>
+
+    <script>
+
+      var hospitalId = document.getElementsById
+      ("optionList");
+      var options = select.getElementsByTagName("option");
+
+      for (var i = 0; i < options.length; i++) {
+        options[i].addEventListener("click", function() {
+          // code to execute on click
+          console.log(options[i].value)
+        });
+      }
+  
+     
+    </script>
+  
+</body>
+</html>

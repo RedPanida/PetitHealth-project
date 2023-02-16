@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'mn_mini';
+    src: url('../fonts/mn_mini-webfont.woff') format('woff'),
+         url('../fonts/mn_mini-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    /* background-color: #E4623C; */
+    background-color: #F4F0EC !important;
+    font-family: 'mn_mini' !important;
+}
+header{
+    position: absolute;
+    width: 100%;
+    /* height: 95px; */
+    /* background-color: #2E86C1; */
+    background: rgb(15,229,181);
+    background: linear-gradient(180deg, rgba(15,229,181,1) 0%, rgba(45,182,151,0.26) 95%, rgba(45,182,151,0) 100%);
+    z-index: 10;
+}
+.logo{
+    width: 50%;
+    height: auto;
+}
+.fa-bars{
+    color: #fff;
+}
+.catgories {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding-right: 0 !important;
+}
+.catgories a {
+    color: white !important;
+    cursor: pointer !important;
+}
+/* .catgories a:hover{
+    background-color: #236490;
+    transition: 0.3s;
+} */
+
+.cate a:hover{
+    /* background-color: #236490 !important; */
+    transition: 0.3s !important;
+    color: #030C4A !important;
+}
+/* .bookingDrop a{
+    text-decoration: none !important;
+    color: #fff !important;
+} */
+.bookingDropContent{
+    background-color: #2E86C1 !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 1s;
+}
+.bookingDropContent a{
+    color: #fff !important;
+    padding: 10px 10px 10px 0;
+    transition: 0.5s;
+    text-align: center !important;
+}
+.bookingDropContent a:hover{
+    background-color: #236490;
+    color: #fff !important;
+}
+.regis{
+    display: flex;
+    justify-content: end;
+}
+.regisBtn{
+    width: 130px;
+    height: 47px;
+    border-radius: 10px;
+    border:solid 3px #E4623C;
+    background-color: white;
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+    
+}
+.regisBtn:hover{
+    background-color: #F8CD51;
+    border: solid 3px #F8CD51;
+    transition: 0.5s;
+    color: #030C4A;
+}
+.banner img{
+    position: relative;
+    width: 100%;
+    height: 637px;
+    z-index: 1;
+    padding: 0;
+}
+.textBanner{
+    position: absolute;
+    z-index: 2;
+    color: #030C4A !important;
+    margin-top: 106px !important; 
+    font-size: 32px;
+    padding: 0;
+}
+.bannerHeadT{
+    font-size: 53px;
+    color: #fff;
+    margin-top: 76px;
+    line-height: 63px;
+}
+.bannerdetailT{
+    color: #fff;
+    font-size: 25px;
+}
+.bannerBtn{
+    width: 362px;
+    height: 76px;
+    background-color: #516AE9;
+    opacity: 80%;
+    border-radius: 10px;
+    border-color: #fff;
+    /* margin-top: 40px; */
+    transition: 0.5s;
+    font-size: 22px;
+    padding-top: 10px;
+}
+.bannerBtn p{
+    opacity: 100%;
+}
+.bannerBtn:hover{
+    opacity: 100%;
+    border-color: #516AE9;
+    transition: 0.5s;
+}
+.service{
+    width: 300px;
+    height: 87px;
+    background-color: white;
+    border-radius: 10px;
+    border:solid 3px #E4623C;
+    font-size: 20px;
+}
+.service:hover{
+    background-color: #F8CD51;
+    border: solid 3px #F8CD51;
+    transition: 0.3s;
+}
+.serviceH{
+    text-decoration: none;
+    color: #000;
+}
+.article{
+    width: 300px;
+    height: 427px;
+    background-color: white;
+    border-radius: 10px;
+}
+.footer{
+    width: auto;
+    height: 77px;
+    background-color: #2E86C1;
+}
+.logoFooter{
+    width: auto;
+    height: 75px;
+}
+.credit{
+    float: right;
+    color: white !important;
+}
+.creditMobile{
+    display: none;
+}
+.creditDesktop{
+    color: #fff !important;
+}
+/* footer{
+    display: block;
+    bottom: 0;
+} */
+.user{
+    color: #fff !important;
+}
+
+@media (max-width: 800px) {
+    .regis{
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .logoFooter{
+        width: 97px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .creditDesktop{
+        display: none;
+    }
+    .creditMobile{
+        display: block;
+        color: #fff !important;
+        margin-top: 30px;
+    }
+    /* .navbar{
+        display: block !important;
+    } */
+    .textBanner{
+        margin: 16px 0 0 29px !important;
+    }
+    .textBanner p{
+        font-size: 10px !important;
+        padding-top: 0 !important;
+    }
+    .bannerBtn{
+        margin: 0 !important;
+        width: 88px !important;
+        height: 20px !important;
+        font-size: 10px !important;
+        padding: 0;
+        display: none;
+    }
+}

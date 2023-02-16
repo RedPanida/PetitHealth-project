@@ -1,0 +1,8 @@
+.address{
+  width: 100%;
+  border: solid 3px #E4623C;
+  border-radius: 10px;
+  height: 67px;
+  /* font-size: 22px; */
+  padding-left: 10px;
+}

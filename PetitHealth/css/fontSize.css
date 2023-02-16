@@ -1,0 +1,54 @@
+.topic{
+  font-size: 32px !important;
+}
+.header1{
+  font-size: 30px !important;
+  font-weight: bold !important;
+}
+.header2{
+  font-size: 22px !important;
+  font-weight: bold !important;
+}
+.title1{
+  font-size: 28px !important; 
+  font-weight: bold !important;
+}
+.title2{
+  font-size: 18px !important; 
+  font-weight: bold !important;
+}
+.subtitle1{
+  font-size: 22px !important;
+}
+.subtitle2{
+  font-size: 16px !important;
+}
+.detail{
+  font-size: 12px !important;
+}
+.header1M{
+  font-size: 25px !important;
+}
+.header2M{
+  font-size: 22px !important;
+}
+.header3M{
+  font-size: 20px !important;
+}
+.header4M{
+  font-size: 15px !important;
+}
+.subtitle1M{
+  font-size: 18px !important;
+}
+.subtitle2M{
+  font-size: 18px !important;
+  font-weight: bold !important;
+  font-style: italic !important;
+}
+.subtitle3M{
+  font-size: 12px !important;
+}
+.subtitle4M{
+  font-size: 10px !important;
+}

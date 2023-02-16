@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/vdo.css">
+  <link rel="stylesheet" href="../css/fontSize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Petit Health</title>
+</head>
+<body>
+
+  <header>
+    <nav class="head navbar navbar-expand-lg">
+      <div class="container">
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img class="logo col-lg-2 col-sm-8" src="../img/logo.png" alt="">
+        <div class="col-lg-10 text-center navbar-collapse collapse" id="navbarTogglerDemo03">
+          <ul class="catgories navbar-nav me-auto mb-2 mb-lg-0 gy-2">
+            <div class="cate col-lg-2 pt-2">
+              <li class="nav-item">
+                <a class="header2 nav-link" href="../index.html">หน้าหลัก</a></li>
+            </div>
+            <div class="cate col-lg-3 pt-2 nav-item dropdown ">
+              <a class="header2 text-white text-decoration-none nav-link text-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">นัดหมายสัตวแพทย์ 
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <div class="bookingDropContent dropdown-menu">
+                <a class="header2 ps-2 dropdown-item" href="../vdocall/vdocall.html">จองวิดีโอคอลกับสัตวแพทย์</a>
+                <a class="header2 ps-2 dropdown-item" href="../booking/booking.html">จองคิวสัตวแพทย์มาที่บ้าน</a>
+              </div>            
+            </div>
+            <div class="cate col-lg-3 pt-2 nav-item dropdown ">
+              <a class="header2 text-white text-decoration-none nav-link text-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">ความรู้จากสัตวแพทย์ 
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <div class="bookingDropContent dropdown-menu">
+                <a class="header2 ps-2 dropdown-item" href="../article/article.html">ความรู้จากสัตวแพทย์</a>
+                <a class="header2 ps-2 dropdown-item" href="../article/article-like.html">ความรู้ที่ถูกใจ</a>
+              </div>            
+            </div>
+            <div class="cate col-lg-2 pt-2">
+              <li class="nav-item">
+                <a class="header2 nav-link" href="#">สำหรับสัตวแพทย์</a>
+              </li>
+            </div>
+            <div class="col-lg-2™ nav-item navbar-collapse collapse show regis">
+              <!-- <button class="nav-link regisBtn header2" type="button">ลงชื่อเข้าใช้</button> -->
+              <p class="header2 user mt-3">ปณิดา จ.</p>
+            </div>
+          </ul>  
+        </div>     
+      </div>
+    </nav>
+  </header>
+
+  <div>
+    <p class="mt-5 text-center headVdo">วิดีโอคอลกับสัตวแพทย์</p>
+
+    <div class="container mt-4">
+      <div class="row mt-5">
+        <div class="col-lg-4 col-sm-12">
+          <p class="hospitalName">สัตว์เลี้ยงของคุณ</p>
+        </div>
+      
+        <div>
+          <div class="select-menuP mt-3"">
+            <div class="selectP">
+              <span class="detailH">
+                เลือกสัตว์เลี้ยงที่คุณต้องการนัดหมาย
+              </span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="optionP-list">
+              <div class="optionP detailH">มอคค่า</div>
+              <div class="optionP detailH">ไอติม</div>
+              <div class="optionP detailH">ลาเต้</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-lg-4 col-sm-12">
+          <p class="hospitalName">อาการของสัตว์เลี้ยง</p>
+        </div>
+      
+        <div>
+          <div class="select-menu mt-3"">
+            <div class="selectT">
+              <span class="detailH">
+                อาการที่เกิดขึ้นกับสัตว์เลี้ยง
+              </span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="option-listT">
+              <div class="optionT detailH">อาเจียน</div>
+              <div class="optionT detailH">ถ่ายเหลว</div>
+              <div class="optionT detailH">ไม่อยากอาหาร</div>
+              <div class="optionT detailH">เซื่องซึม</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="row mt-3">
+        <div class="col-lg-4 col-sm-12">
+          <p class="hospitalName">รวบรวมค่าใช้จ่าย</p>
+        </div>
+      
+        <div>
+          <div class="select-menuPm mt-3"">
+            <div class="selectPm detailH">
+              <span class="hospitalName">เลือกช่องทางการชำระเงิน</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="optionPm-list detailH">
+              <div class="optionPm">**** **** **** 3016 <br>
+                ขื่อผู้ถือบัตร: ปณิดา จันทร์เพ็ญ
+              </div>
+              <div class="optionPm detailH">**** **** **** 1122 <br>
+                ขื่อผู้ถือบัตร: ปณิดา จันทร์เพ็ญ
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4 detailH">
+          <div class="col-4">
+            ค่าปรึกษาสัตวแพทย์
+          </div>
+          <div class="col-4">
+
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            3xx บาท
+          </div>
+        </div>
+        <div class="row mt-2 appointTime">
+          <div class="col-4">
+            ราคารวม
+          </div>
+          <div class="col-4">
+
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            3xx บาท
+          </div>
+        </div>
+      </div>
+       
+      <div class="row" style="margin-top: 100px;">
+       <div class="col-4">
+        <button class="preBt">
+          <a href="./vdocall3.html">ย้อนกลับ</a>
+        </button>
+       </div>
+       <div class="col-4">
+
+       </div>
+       <div class="col-4">
+        <button class="nextBt">
+          <a href="#">ต่อไป</a>
+        </button>
+       </div>
+      </div>
+      
+    </div>
+  </div>
+
+ <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <img class="logoFooter" src="../img/logo.png">
+          </div>
+          <div class="col-2">
+
+          </div>
+          <div class="col-6 d-flex justify-content-end">
+            <p class="mt-3 creditDesktop title1">© copyright senior project 2022</p>
+            <p class="creditMobile subtitle3M">© copyright senior project 2022</p>
+          </div>   
+        </div>
+      </div>  
+    </footer>
+
+   <script>
+      const selectP = document.querySelector(".selectP");
+      const optionP_list = document.querySelector(".optionP-list");
+      const optionP = document.querySelectorAll(".optionP")
+      
+      //open option
+      selectP.addEventListener("click", () => {
+        optionP_list.classList.toggle("active");
+      });
+
+      //choose option
+      optionP.forEach((options) => {
+        options.addEventListener("click", () =>{
+          optionP.forEach((option) => {options.classList.remove('selected')});
+          select.querySelector("span").innerHTML = options.innerHTML;
+          options.classList.add("selected")
+          optionP_list.classList.toggle("active");
+        });
+      });
+    </script>
+
+    <script>
+      const selectT = document.querySelector(".selectT");
+      const option_listT = document.querySelector(".option-listT");
+      const optionT = document.querySelectorAll(".optionT")
+
+      //open option
+      selectT.addEventListener("click", () => {
+        option_listT.classList.toggle("active")
+      })
+      //choose option
+      optionT.forEach((optionsT) => {
+        optionsT.addEventListener("click", () => {
+          optionT.forEach((optionT) => {optionsT.classList.remove('selected')});
+          selectT.querySelector("span").innerHTML = optionsT.innerHTML;
+          optionsT.classList.add("selected")
+          option_listT.classList.toggle("active");
+        })
+      })
+    </script>
+
+    <script>
+      const selectPm = document.querySelector(".selectPm");
+      const option_listPm = document.querySelector(".optionPm-list");
+      const optionPm = document.querySelectorAll(".optionPm")
+
+      //open option
+      selectPm.addEventListener("click", () => {
+        option_listPm.classList.toggle("active")
+      })
+      //choose option
+      optionPm.forEach((optionsPm) => {
+        optionsPm.addEventListener("click", () => {
+          optionPm.forEach((optionT) => {optionsT.classList.remove('selected')});
+          selectPm.querySelector("span").innerHTML = optionsPm.innerHTML;
+          optionsPm.classList.add("selected")
+          option_listPm.classList.toggle("active");
+        })
+      })
+    </script>
+
+  
+</body>
+</html>
