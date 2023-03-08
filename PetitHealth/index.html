@@ -74,69 +74,200 @@
   </header>
 
   <div class="content container-fluid p-0">
-    <div class="banner row">
-      <img src="./img/banner-edit.png" alt="">
-      <div class="textBanner">
-        <div>
-          <p class="bannerHeadT">
-            สะดวก รวดเร็ว ด้วยบริการวีดีโอคอล  <br> ดูแลเพื่อนขนฟูของคุณ
-          </p>
-          <p class="bannerdetailT">
-            พบกับสัตวแพทย์ผู้เชี่ยวชาญของเรา มีเคล็ดลับคำแนะนำและข้อมูลเชิงลึกจากสัตวแพทย์ชั้นนำ <br>
-            เรามีฟังก์ชันวิดีโอคอล ไม่ว่าจะเป็นข้อมูลเกี่ยวกับการนัดหมาย การดูแลป้องกันหรือการจัดการอาการ <br> 
-            เรื้อรัง ฟังก์ชันของเราสามารถตอบโจทย์คุณได้ สนใจทดลองจองคิววีดีโอคอลที่ปุ่มด้านล่าง
-          </p>
-        </div>
-        <button class="bannerBtn text-center text-white">
-          <p>
-            <iconify-icon inline icon="material-symbols:video-call-rounded" width="61" height="61"></iconify-icon> จองคิววิดีโอคอลสัตวแพทย์
-          </p>
-        </button>
-
-        <div class="service mt-4">
-
-          <div class="row gy-3 mt-3">
-            <div class="col-lg-4 col-sm-12 ">
-              <button type="button" class="serviceBtn">
-                <a href="./vdocall/vdocall.html" class="serviceH"> <iconify-icon inline icon="material-symbols:video-chat-outline-rounded" width="74"></iconify-icon> จองวิดีโอคอลพบ<br>สัตวแพทย์</a>
-              </button>
-            </div>  
-
-            <div class="col-lg-4 col-sm-12">
-              <button type="button" class="serviceBtn">
-                <a href="./booking/booking.html" class="pt-3 serviceH"> <iconify-icon inline icon="material-symbols:home-pin" width="76"></iconify-icon> จองคิว<br>สัตวแพทย์มาบ้าน</a>
-              </button>
-            </div>  
-
-            <div class="col-lg-4 col-sm-12">
-              <button type="button" class="serviceBtn">
-                <a href="./article/article.html" class="pt-3 serviceH"><iconify-icon inline icon="entypo:news" width="71" height="64"></iconify-icon> สาระความรู้<br>จากสัตวแพทย์</a>
-              </button>
-            </div>  
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active banner">
+          <img src="./img/banner-edit.png" class="d-block w-100" alt="...">
+          <div class="textBanner carousel-caption d-none d-md-block" style="padding-bottom: 5rem;">
+            <p class="bannerHeadT text-start">
+              สะดวก รวดเร็ว ด้วยบริการวีดีโอคอล  <br> ดูแลเพื่อนขนฟูของคุณ
+            </p>
+            <p class="bannerdetailT text-start">
+              พบกับสัตวแพทย์ผู้เชี่ยวชาญของเรา มีเคล็ดลับคำแนะนำและข้อมูลเชิงลึกจากสัตวแพทย์ชั้นนำ <br>
+              เรามีฟังก์ชันวิดีโอคอล ไม่ว่าจะเป็นข้อมูลเกี่ยวกับการนัดหมาย การดูแลป้องกันหรือการจัดการอาการ <br> 
+              เรื้อรัง ฟังก์ชันของเราสามารถตอบโจทย์คุณได้ สนใจทดลองจองคิววีดีโอคอลที่ปุ่มด้านล่าง
+            </p>
+             <button class="bannerBtn text-center align-items-center">
+              <div>
+                <a href="./vdocall/vdocall.html" style="text-decoration: none;" class="text-white">
+                  <p class="d-flex align-items-center justify-content-center m-0">
+                    <iconify-icon icon="material-symbols:video-call-rounded" width="3em" height="3em"></iconify-icon> จองคิววิดีโอคอลสัตวแพทย์
+                  </p>
+                </a>
+              </div> 
+            </button>
           </div>
         </div>
-      </div>     
+        <div class="carousel-item banner">
+          <img src="./img/banner-edit2.png" class="d-block w-100" alt="...">
+          <div class="textBanner carousel-caption d-none d-md-block" style="padding-bottom: 5rem;">
+            <p class="bannerHeadT text-start">
+              กดจองคิวเพื่อใช้นัดหมายแพทย์มาที่บ้าน  <br> ทำให้สัตว์เลี้ยงของคุณพบหมอได้เลย
+            </p>
+            <p class="bannerdetailT text-start">
+              พบกับสัตวแพทย์ผู้เชี่ยวชาญของเรา มีเคล็ดลับคำแนะนำและข้อมูลเชิงลึกจากสัตวแพทย์ชั้นนำ<br>
+              เรามีฟังก์ชันวิดีโอคอล ไม่ว่าจะเป็นข้อมูลเกี่ยวกับการนัดหมาย การดูแลป้องกันหรือการจัดการอาการ <br> 
+              เรื้อรัง ฟังก์ชันของเราสามารถตอบโจทย์คุณได้ สนใจทดลองจองคิวนัดตรวจสัตว์เลี้ยงถึงบ้านที่ปุ่มด้านล่าง
+            </p>
+             <button class="bannerBtn text-center">
+              <div>
+                <a href="./vdocall/vdocall.html" style="text-decoration: none;" class="text-white">
+                  <p class="d-flex align-items-center justify-content-center m-0">
+                    <iconify-icon icon="material-symbols:home-pin" width="3em" height="3em"></iconify-icon> </iconify-icon> จองคิวสัตวแพทย์มาบ้าน
+                  </p>
+                </a>
+              </div> 
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
+    <div class="service d-flex justify-content-center">
+      <div class="row gy-3">
+        <div class="col-lg-4 col-sm-12 ">
+          <a style="text-decoration: none;" href="./vdocall/vdocall.html">
+            <button type="button" class="serviceBtn d-flex align-items-center m-0 row">
+              <div class="col-4">
+                <iconify-icon width="3em" height="3em" icon="material-symbols:video-chat-outline-rounded"></iconify-icon>                   
+              </div>
+              <div class="col-8">
+                <p style="text-align:left;"> 
+                  วิดีโอคอล<br>พบสัตวแพทย์
+                </p>
+              </div>
+            </button>
+          </a>
+        </div> 
+
+        <div class="col-lg-4 col-sm-12">
+          <a style="text-decoration: none;" href="./booking/booking.html">
+            <button type="button" class="serviceBtn d-flex align-items-center justify-content-center m-0 row">
+              <div class="col-4">                  
+                <iconify-icon icon="material-symbols:home-pin" width="3em" height="3em"></iconify-icon> 
+              </div>
+              <div class="col-8">
+                <p style="text-align:left">
+                  จองคิว<br>สัตวแพทย์มาบ้าน
+                </p>
+              </div>
+            </button>
+          </a>
+        </div>  
+
+        <div class="col-lg-4 col-sm-12">
+          <a style="text-decoration: none;" href="./article/article.html">
+            <button type="button" class="serviceBtn d-flex align-items-center justify-content-center m-0 row">
+              <div class="col-4">
+                <iconify-icon inline icon="entypo:news" width="3em" height="3em"></iconify-icon> 
+              </div>
+              <div class="col-8">
+                <p style="text-align:left">
+                  สาระความรู้<br>จากสัตวแพทย์
+                </p>
+              </div>
+            </button>
+          </a>
+        </div>  
+      </div>
+    </div>
    
-    <div class="container" style="margin-top: 62px;">
-      <p style="font-size: 30px;"><iconify-icon inline icon="mingcute:book-6-line" width="53" height="53"></iconify-icon> สาระความรู้จากสัตวแพทย์</p>
+    <div class="container" style="margin-top: 100px;">
+      <p style="font-size: 30px;" class="d-flex align-items-center "><iconify-icon icon="mingcute:book-6-line" width="2em" height="2em"></iconify-icon> สาระความรู้จากสัตวแพทย์</p>
         
       <div class="olderArticle mt-5">
+
+         <div class="row recent p-3 mt-2">
+          <div class="pic col-lg-6 col-sm-12 texi-center">
+            <img src="../img/dog-pm.jpg">
+          </div>
+          <div class="description col-lg-6 col-sm-12 texi-center">
+            <p class="appointDateTime titleHead">6 วิธี "ดูแลสัตว์เลี้ยง" ให้ปลอดภัยจาก "ฝุ่น PM 2.5"</p>
+            <p class="appointTime detailHead">มี "สัตว์เลี้ยง" แสนรักต้องรู้ วิธีดูแลสัตว์เลี้ยงให้ ปลอดภัยจาก "ฝุ่นพิษ" หลังคุณภาพอากาศแย่ "ฝุ่น PM 2.5" กลับมาเกินค่ามาตรฐาน... </p>
+            
+            <div class="foot row footHead">
+              <p class="wrtited">
+              เขียนโดย: โรงพยาบาลสัตว์...
+              </p>
+              <div class="row interact col-6">
+                <div class="col-4" style="font-size: 15px;">
+                  <i class="fa-regular fa-heart icon"></i>
+                  100
+                </div>
+                <div class="col-4" style="font-size: 15px;">
+                  <i class="fa-regular fa-comment icon"></i>
+                  50
+                </div>
+                <div class="col-4" style="font-size: 15px;">
+                  <i class="fa-regular fa-eye icon"></i>
+                  150
+                </div>
+              </div>
+              <div class="interact col-6 d-flex justify-content-end">
+                <i class="fa-regular fa-calendar icon"></i> 
+                19/01/65
+              </div>
+            </div>
+          </div>
+        </div>
     
         <div class="row mt-3 d-flex justify-content-around gy-3">
           <div class="col-lg-4 col-sm-12">
             <div class="oldArticle p-3">
-              <img src="./img/dog-pm.jpg">
-              <h5 class="mt-3">6 วิธี "ดูแลสัตว์เลี้ยง" ให้ปลอดภัยจาก "ฝุ่น PM 2.5"</h5>
-              <p class="detail">มี "สัตว์เลี้ยง" แสนรักต้องรู้ วิธีดูแลสัตว์เลี้ยงให้ ปลอดภัยจาก "ฝุ่นพิษ" หลังคุณภาพอากาศแย่ "ฝุ่น PM 2.5" กลับมาเกินค่ามาตรฐาน... </p>
+              <img src="./img/article1.jpg">
+              <p class="mt-3 title2">4 วิธีเลือกอาหารสัตว์ให้เหมาะสมต่อ สุขภาพสัตว์เลี้ยงของคุณ</p>
+              <p class="subtitle2">วิธีเลือกอาหารสัตว์ เป็นอีกหนึ่งความสำคัญของการ เลี้ยงสัตว์เพื่อให้มีสุขภาพดีอยู่เสมอ การเลือกอาหารคุณภาพ... </p>
+            
+              <div class="footOld row">
+                <div class="row writedOld">
+                  <p class="wrtited detail col-6">
+                    เขียนโดย: โรงพยาบาลสัตว์...
+                  </p>
+                  <div class="interact col-6 d-flex justify-content-end detail">
+                    <i class="fa-regular fa-calendar icon"></i> 
+                        19/01/65
+                  </div>
+                </div>
+                <div class="row interact">
+                  <div class="row col-6">
+                    <div class="col-6 detail">
+                      <i class="fa-regular fa-heart icon"></i>
+                          100
+                    </div>
+                    <div class="col-6 detail">
+                      <i class="fa-regular fa-comment icon"></i>
+                          50
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end col-6 detail">
+                    <i class="fa-regular fa-eye icon"></i>
+                      <p class="ps-1">150</p>
+                  </div> 
+                </div>      
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-sm-12">
+            <div class="oldArticle p-3">
+              <img src="./img/article2.jpg">
+              <p class="mt-3 title2">‘กรูมมิ่ง’ พร้อมเช็คสุขภาพน้องสัตว์เลี้ยงกันเถอะ!"</p>
+              <p class="subtitle2">การกรูมมิ่งถือเป็นอีกหนึ่งกิจกรรมทีขาดไม่ได้ของสัตว์เลี้ยง นอกเหนือจากความสะอาดและ ความเพลิดเพลินที่ได้รับแล้วนั้น...</p>
           
               <div class="footOld row">
                 <div class="row writedOld">
-                  <p class="wrtited col-6">
+                  <p class="wrtited detail col-6">
                   เขียนโดย: โรงพยาบาลสัตว์...
                   </p>
-                  <div class="interact col-6 d-flex justify-content-end">
+                  <div class="interact col-6 d-flex justify-content-end detail">
                       <i class="fa-regular fa-calendar icon"></i> 
                       19/01/65
                   </div>
@@ -144,16 +275,16 @@
                 
                 <div class="row interact">
                   <div class="row col-6">
-                    <div class="col-6">
+                    <div class="col-6 detail">
                       <i class="fa-regular fa-heart icon"></i>
                         100
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 detail">
                       <i class="fa-regular fa-comment icon"></i>
                         50
                     </div>
                   </div>
-                  <div class="d-flex justify-content-end col-6">
+                  <div class="d-flex justify-content-end col-6 detail">
                     <i class="fa-regular fa-eye icon"></i>
                      <p class="ps-1">150</p>
                   </div> 
@@ -164,32 +295,143 @@
 
           <div class="col-lg-4 col-sm-12">
            <div class="oldArticle p-3">
-            <img src="./img/dog-pm.jpg">
-            <h5 class="mt-3">6 วิธี "ดูแลสัตว์เลี้ยง" ให้ปลอดภัยจาก "ฝุ่น PM 2.5"</h5>
-            <p class="detail">มี "สัตว์เลี้ยง" แสนรักต้องรู้ วิธีดูแลสัตว์เลี้ยงให้ ปลอดภัยจาก "ฝุ่นพิษ" หลังคุณภาพอากาศแย่ "ฝุ่น PM 2.5" กลับมาเกินค่ามาตรฐาน... </p>
+            <img src="./img/article3.jpg">
+            <p class="mt-3 title2">4 วิธีเลือกอาหารสัตว์ให้เหมาะสมต่อ สุขภาพสัตว์เลี้ยงของคุณ</p>
+            <p class="subtitle2">วิธีเลือกอาหารสัตว์ เป็นอีกหนึ่งความสำคัญของการ เลี้ยงสัตว์เพื่อให้มีสุขภาพดีอยู่เสมอ การเลือกอาหารคุณภาพ... </p>
           
             <div class="footOld row">
               <div class="row writedOld">
-                <p class="wrtited col-6">
+                <p class="wrtited detail col-6">
                   เขียนโดย: โรงพยาบาลสัตว์...
                 </p>
-                <div class="interact col-6 d-flex justify-content-end">
+                <div class="interact col-6 d-flex justify-content-end detail">
                   <i class="fa-regular fa-calendar icon"></i> 
                       19/01/65
                 </div>
               </div>
               <div class="row interact">
                 <div class="row col-6">
-                  <div class="col-6">
+                  <div class="col-6 detail">
                     <i class="fa-regular fa-heart icon"></i>
                         100
                   </div>
-                  <div class="col-6">
+                  <div class="col-6 detail">
                     <i class="fa-regular fa-comment icon"></i>
                         50
                   </div>
                 </div>
-                <div class="d-flex justify-content-end col-6">
+                <div class="d-flex justify-content-end col-6 detail">
+                  <i class="fa-regular fa-eye icon"></i>
+                     <p class="ps-1">150</p>
+                </div> 
+              </div>       
+            </div>
+          </div>
+        </div>    
+      </div>
+
+      <div class="row mt-3 d-flex justify-content-around gy-3">
+          <div class="col-lg-4 col-sm-12">
+            <div class="oldArticle p-3">
+              <img src="./img/article4.jpg">
+              <p class="mt-3 title2">4 วิธีเลือกอาหารสัตว์ให้เหมาะสมต่อ สุขภาพสัตว์เลี้ยงของคุณ</p>
+              <p class="subtitle2">วิธีเลือกอาหารสัตว์ เป็นอีกหนึ่งความสำคัญของการ เลี้ยงสัตว์เพื่อให้มีสุขภาพดีอยู่เสมอ การเลือกอาหารคุณภาพ... </p>
+            
+              <div class="footOld row">
+                <div class="row writedOld">
+                  <p class="wrtited detail col-6">
+                    เขียนโดย: โรงพยาบาลสัตว์...
+                  </p>
+                  <div class="interact col-6 d-flex justify-content-end detail">
+                    <i class="fa-regular fa-calendar icon"></i> 
+                        19/01/65
+                  </div>
+                </div>
+                <div class="row interact">
+                  <div class="row col-6">
+                    <div class="col-6 detail">
+                      <i class="fa-regular fa-heart icon"></i>
+                          100
+                    </div>
+                    <div class="col-6 detail">
+                      <i class="fa-regular fa-comment icon"></i>
+                          50
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end col-6 detail">
+                    <i class="fa-regular fa-eye icon"></i>
+                      <p class="ps-1">150</p>
+                  </div> 
+                </div>      
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-sm-12">
+            <div class="oldArticle p-3">
+              <img src="./img/article5.jpg">
+              <p class="mt-3 title2">‘กรูมมิ่ง’ พร้อมเช็คสุขภาพน้องสัตว์เลี้ยงกันเถอะ!"</p>
+              <p class="subtitle2">การกรูมมิ่งถือเป็นอีกหนึ่งกิจกรรมทีขาดไม่ได้ของสัตว์เลี้ยง นอกเหนือจากความสะอาดและ ความเพลิดเพลินที่ได้รับแล้วนั้น...</p>
+          
+              <div class="footOld row">
+                <div class="row writedOld">
+                  <p class="wrtited detail col-6">
+                  เขียนโดย: โรงพยาบาลสัตว์...
+                  </p>
+                  <div class="interact col-6 d-flex justify-content-end detail">
+                      <i class="fa-regular fa-calendar icon"></i> 
+                      19/01/65
+                  </div>
+                </div>
+                
+                <div class="row interact">
+                  <div class="row col-6">
+                    <div class="col-6 detail">
+                      <i class="fa-regular fa-heart icon"></i>
+                        100
+                    </div>
+                    <div class="col-6 detail">
+                      <i class="fa-regular fa-comment icon"></i>
+                        50
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end col-6 detail">
+                    <i class="fa-regular fa-eye icon"></i>
+                     150
+                  </div> 
+                </div>     
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12">
+           <div class="oldArticle p-3">
+            <img src="./img/article6.jpg">
+            <p class="mt-3 title2">4 วิธีเลือกอาหารสัตว์ให้เหมาะสมต่อ สุขภาพสัตว์เลี้ยงของคุณ</p>
+            <p class="subtitle2">วิธีเลือกอาหารสัตว์ เป็นอีกหนึ่งความสำคัญของการ เลี้ยงสัตว์เพื่อให้มีสุขภาพดีอยู่เสมอ การเลือกอาหารคุณภาพ... </p>
+          
+            <div class="footOld row">
+              <div class="row writedOld">
+                <p class="wrtited detail col-6">
+                  เขียนโดย: โรงพยาบาลสัตว์...
+                </p>
+                <div class="interact col-6 d-flex justify-content-end detail">
+                  <i class="fa-regular fa-calendar icon"></i> 
+                      19/01/65
+                </div>
+              </div>
+              <div class="row interact">
+                <div class="row col-6">
+                  <div class="col-6 detail">
+                    <i class="fa-regular fa-heart icon"></i>
+                        100
+                  </div>
+                  <div class="col-6 detail">
+                    <i class="fa-regular fa-comment icon"></i>
+                        50
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end col-6 detail">
                   <i class="fa-regular fa-eye icon"></i>
                      <p class="ps-1">150</p>
                 </div> 
@@ -197,47 +439,23 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-4 col-sm-12">
-          <div class="oldArticle p-3">
-            <img src="./img/dog-pm.jpg">
-            <h5 class="mt-3">6 วิธี "ดูแลสัตว์เลี้ยง" ให้ปลอดภัยจาก "ฝุ่น PM 2.5"</h5>
-            <p class="detail">มี "สัตว์เลี้ยง" แสนรักต้องรู้ วิธีดูแลสัตว์เลี้ยงให้ ปลอดภัยจาก "ฝุ่นพิษ" หลังคุณภาพอากาศแย่ "ฝุ่น PM 2.5" กลับมาเกินค่ามาตรฐาน... </p>
-          
-            <div class="footOld row">
-              <div class="row writedOld">
-                <p class="wrtited col-6">
-                  เขียนโดย: โรงพยาบาลสัตว์...
-                </p>
-                <div class="interact col-6 d-flex justify-content-end">
-                  <i class="fa-regular fa-calendar icon"></i> 
-                      19/01/65
-                </div>
-              </div>
-              <div class="row interact">
-                <div class="row col-6">
-                  <div class="col-6">
-                    <i class="fa-regular fa-heart icon"></i>
-                        100
-                  </div>
-                  <div class="col-6">
-                    <i class="fa-regular fa-comment icon"></i>
-                        50
-                  </div>
-                </div>
-                <div class="d-flex justify-content-end col-6">
-                  <i class="fa-regular fa-eye icon"></i>
-                    <p class="ps-1">150</p>
-                </div> 
-              </div>      
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-    </div>
-    
-    <footer class="footer mt-5">
+      
+      <div class="container d-flex justify-content-center align-items-center mt-5">
+        <button class="articleMore title1">
+          อ่านความรู้เพิ่มเติม
+        </button>
+      </div>
+
+      <div class="mt-5">
+        .
+      </div>
+
+    </div>  
+  </div>
+  </div>
+
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-4">
@@ -253,7 +471,31 @@
         </div>
       </div>  
     </footer>
-  </div>
+
+  <script>
+    // $(function() {
+    //   $(window).on("scroll", function() {
+    //       if($(window).scrollTop() > 50) {
+    //           $(".header").addClass("active");
+    //       } else {
+    //           //remove the background property so it comes transparent again (defined in your css)
+    //         $(".header").removeClass("active");
+    //       }
+    //   });
+    // });
+
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        header.classList.add('active');
+      } else {
+        header.classList.remove('active');
+      }
+    });
+</script>  
 
 </body>
+
+
 </html>

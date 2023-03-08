@@ -7,19 +7,21 @@
 
 }
 body{
-    /* background-color: #E4623C; */
-    
     font-family: 'mn_mini' !important;
 }
 header{
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
-    /* height: 95px; */
-    /* background-color: #2E86C1; */
-    background: rgb(15,229,181);
+    transition: all 0.5s ease-in-out;
     background: linear-gradient(180deg, rgba(15,229,181,1) 0%, rgba(45,182,151,0.26) 95%, rgba(45,182,151,0) 100%);
-    z-index: 10;
+    z-index: 1;
 }
+header.active{
+    background-color: #088D6F;
+    transition: background-color 0.5s ease;
+}
+ 
 .content{
     background: rgb(23,255,213) !important;
     background: linear-gradient(180deg, rgba(23,255,213,0) 0%, rgba(81,178,233,0.74) 100%) !important;
@@ -41,22 +43,12 @@ header{
     color: white !important;
     cursor: pointer !important;
 }
-/* .catgories a:hover{
-    background-color: #236490;
-    transition: 0.3s;
-} */
-
-.cate a:hover{
-    /* background-color: #236490 !important; */
-    transition: 0.3s !important;
-    color: #030C4A !important;
+.cate :hover{
+    color: #000 !important;
+    transition: 0.3s ;
 }
-/* .bookingDrop a{
-    text-decoration: none !important;
-    color: #fff !important;
-} */
 .bookingDropContent{
-    background-color: #2E86C1 !important;
+    background-color: #088D6F !important;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     transition: 1s;
@@ -68,7 +60,7 @@ header{
     text-align: center !important;
 }
 .bookingDropContent a:hover{
-    background-color: #236490;
+    background-color: #076851;
     color: #fff !important;
 }
 .regis{
@@ -92,17 +84,13 @@ header{
     color: #030C4A;
 }
 .banner img{
-    position: relative;
     width: 100%;
     height: 637px;
     z-index: 1;
     padding: 0;
 }
 .textBanner{
-    position: absolute;
-    z-index: 2;
     color: #030C4A !important;
-    margin-top: 106px !important; 
     font-size: 32px;
     padding: 0;
     display: flex;
@@ -127,10 +115,8 @@ header{
     opacity: 80%;
     border-radius: 10px;
     border-color: #fff;
-    /* margin-top: 40px; */
     transition: 0.5s;
     font-size: 20px;
-    padding-top: 10px;
 }
 .bannerBtn p{
     opacity: 100%;
@@ -140,6 +126,11 @@ header{
     border-color: #516AE9;
     transition: 0.5s;
 }
+.service{
+    position: absolute;
+    left: 15%;
+    bottom: 10%;
+}
 .serviceBtn{
     width: 322px;
     height: 104px;
@@ -147,27 +138,34 @@ header{
     border-radius: 10px;
     border:solid 3px #088D6F;
     font-size: 28px;
+    color: #088D6F;
+    transition: 0.3s;
+    filter: drop-shadow(5px 5px 4px #9d9d9d);
 }
 .serviceBtn:hover{
     background-color: #088D6F;
     border: solid 3px #fff;
     transition: 0.3s;
-}
-.serviceH{
-    display: flex;
-    align-items: flex-start;
-    text-decoration: none;
-    color: #088D6F;
-}
-.serviceH:hover{
     color: #fff;
-    transition: 0.3s;
 }
 .article{
     width: 300px;
     height: 427px;
     background-color: white;
     border-radius: 10px;
+}
+.articleMore{
+    width: 359px;
+    height: 77px;
+    background-color: #2DB697;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.articleMore:hover{
+    border-color: #2DB697;
+    transition: 0.3s;
 }
 .footer{
     width: auto;
