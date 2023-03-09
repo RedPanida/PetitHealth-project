@@ -1,6 +1,13 @@
+body{
+  background-color: #FCFAF9 !important;
+}
+.head{
+  background-color: #2DB697;
+}
 .headVdo{
   font-size: 30px;
   color: #000;
+  margin-top: 130px;
 }
 .appointText{
   font-size: 32px;
@@ -13,225 +20,137 @@
 .detailH{
   color: #000;
   font-size: 22px;
+  font-weight: 100;
 }
 .meet{
   margin-top: 50px !important;
   width: 100%;
-  height: auto;
+  height: 476px;
   background-color: white;
+  border: solid 2px #076851;
   border-radius: 10px;
   padding: 20px;
 }
-.meetBtn{
-  width: 200px;
-  height: 50px;
-  color: #030C4A;
-  background-color: #F4F0EC;
-  border: solid 3px #E4623C;
+.appointBtn{
+  width: 190px;
+  height: 48px;
+  color: #fff;
+  background-color: #2DB697;
+  border: solid 3px #2DB697;
   border-radius: 7px;
+  transition: 0.5s;
 }
-.meetBtn:hover{
-  color: white;
-  background-color: #030C4A;
-  border: solid 3px #030C4A;
-  transition: 0.3s;
+.appointBtn:hover{
+  background-color: #076851;
+  border: solid 3px #076851;
+  transition: 0.5s;
+}
+.appointCancelBtn{
+  width: 190px;
+  height: 48px;
+  color: #2DB697;
+  background-color: #fff;
+  border: solid 3px #2DB697;
+  border-radius: 7px;
+  transition: 0.5s;
+
+}
+.appointCancelBtn:hover{
+  color: #fff;
+  background-color: #076851;
+  border: solid 3px #076851;
+  transition: 0.5s;
 }
 .historyH{
+  font-size: 32px;
   color: #696969 !important;
 }
-.historyDetail p {
-  color: #696969;
+.historyDetail{
+  height: auto;
+  width: 600px !important;
+  border-radius: 10px;
+  filter: drop-shadow(2px 4px 4px #696969);
+  background-color: #fff;
+  opacity: 40;
 }
 .bookingBtn{
-  width: 300px;
+  width: 100%;
   height: auto;
   padding: 15px;
   font-size: 25px;
-  background-color: #2E86C1;
+  background-color: #2DB697;
   color: white;
   border-radius: 10px;
   border: none;
+  transition: 0.5s;
+
 }
 .bookingBtn:hover{
-  background-color: #030C4A;
-  transition: 0.3s;
+  background-color: #076851;
+  transition: 0.5s;
 }
 .bookingBtn a {
   text-decoration: none;
   color: white;
 }
-/* option1 */
-.select-menu{
-  width: 100%;
-  cursor: pointer;
-  position: relative;
+.btn{
+  border-top-right-radius: 0.375rem !important;
+  border-bottom-right-radius: 0.375rem !important;
+  --bs-btn-border-width: 3px !important;
 }
-.select{
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 60px;
-  background: #fff;
-  border: solid 3px #E4623C;
-  border-radius: 10px 10px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #030C4A;
+.btn-outline-primary{
+  --bs-btn-color: #696969 !important;
+  --bs-btn-hover-color: #696969 !important;
+  --bs-btn-border-color: transparent !important;
+  --bs-btn-hover-bg: #fff !important;
+  --bs-btn-bg: #fff !important;
+  --bs-btn-hover-border-color: #516AE9 !important;
+  --bs-btn-active-border-color: #516AE9 !important;
+  --bs-btn-active-bg: #fff !important;
+  --bs-btn-active-color: #000 !important;
 }
-/* .select-menu span{
-  font-size: 25px;
-} */
-.select-menu i{
-  float: right;
-  font-size: 30px;
-  color: #030C4A;
+.dropdown-menu{
+  --bs-dropdown-link-active-bg: #516AE9 !important;
+  cursor: pointer !important;
 }
-.option-list{
-  /* position: absolute; */
-  width: 100%;
-  background-color: #fff;
-  border: solid 3px #E4623C;
-  border-radius: 0 0 10px 10px;
-  transition: .3s linear .1s;
-  overflow-y: auto;
-  height: 0;
-  color: #030C4A;
-  /* z-index: 1; */
-}
-.option{
-  padding: 15px 10px 15px 10px;
-  /* font-size: 25px; */
-  transition: .3s ease-in-out;
-}
-.option:hover{
-  background-color: #F4F0EC;
-}
-.option-list.active{
-  height: 200px;
-}
-
-/* option2 */
-.select-menuT{
-  width: 100%;
-  cursor: pointer;
-  position: relative;
-  color: #030C4A;
-}
-.selectT{
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 60px;
-  background: #fff;
-  border: solid 3px #E4623C;
-  border-radius: 10px 10px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #030C4A;
-}
-.select-menuT span{
-  font-size: 25px;
-}
-.select-menuT i{
-  float: right;
-  /* font-size: 30px; */
-  color: #030C4A;
-}
-.option-listT{
-  /* position: absolute; */
-  width: 100%;
-  background-color: #fff;
-  border: solid 3px #E4623C;
-  border-radius: 0 0 10px 10px;
-  transition: .3s linear .1s;
-  overflow-y: auto;
-  height: 0;
-  /* z-index: 1; */
-}
-.optionT{
-  padding: 15px 10px 15px 10px;
-  /* font-size: 25px; */
-  transition: .3s ease-in-out;
-}
-.optionT:hover{
-  background-color: #FFF4CF;
-}
-.option-listT.active{
-  height: 200px;
-}
-
-/* vetchoose */
-#box{
-  /* margin-top: 20px; */
-  display: none;
-}
-.vetSelf{
-  font-size: 25px;
-  padding-left: 40px;
-  color: #030C4A;
-}
-.choose{
-  padding: 10px;
-}
-.vet input{
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-.checkmark{
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  background-color: #fff;
-  border-radius: 50%;
-  border: solid 2px #E4623C;
-  cursor: pointer;
-}
-.vet:hover input ~ .checkmark{
-  background-color: #fff;
-}
-.vet input:checked ~ .checkmark {
-  background-color: #fff;
-}
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.vet input:checked ~ .checkmark:after {
-  display: block;
-}
-.vet .checkmark:after {
-  top: 2px;
-  left: 2px;
-	width: 22px;
-	height: 22px;
-	border-radius: 50%;
-	background: #E4623C;
+.dropdownButton{
+  text-align: start !important;
+  color: #000 !important;
 }
 .preBt{
-  width: 200px;
+  width: 491px;
   height: 60px;
-  border: solid 3px #E4623C;
-  border-radius: 10px;
-  font-size: 24px;
-  background-color: transparent;
-}
-.preBt a{
-  color: #030C4A;
-  text-decoration: none;
-}
-.nextBt{
-  width: 200px;
-  height: 60px;
-  border: solid 3px #E4623C;
+  border: solid 3px #2DB697;
   border-radius: 10px;
   font-size: 24px;
   background-color: #fff;
+  color: #2DB697;
+  transition: 0.5s;
+}
+.preBt a{
+  /* color: #030C4A; */
+  text-decoration: none;
+}
+.preBt:hover,
+.nextBt:hover {
+  background-color: #076851;
+  color: #fff;
+  border: #076851;
+  transition: 0.5s;
+}
+.nextBt{
+  width: 491px;
+  height: 60px;
+  border: solid 3px #2DB697;
+  border-radius: 10px;
+  font-size: 24px;
+  background-color: #2DB697;
   float: right;
+  color: #fff;
+  transition: 0.5s;
 }
 .nextBt a{
-  color: #030C4A;
+  /* color: #030C4A; */
   text-decoration: none;
 }
 

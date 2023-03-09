@@ -6,6 +6,13 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'mn_minilight';
+    src: url('../fonts/mn_minimon-webfont.woff2') format('woff2'),
+         url('../fonts/mn_minimon-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
 body{
     font-family: 'mn_mini' !important;
 }

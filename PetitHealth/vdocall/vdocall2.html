@@ -12,6 +12,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+
 
   <title>Petit Health</title>
 </head>
@@ -71,77 +73,106 @@
     </nav>
   </header>
 
-  <div>
-    <p class="mt-5 text-center headVdo">วิดีโอคอลกับสัตวแพทย์</p>
+  <div class="container-fluid">
+    <p class="text-center headVdo">วิดีโอคอลกับสัตวแพทย์</p>
+
 
     <div class="container mt-4">
-      <!-- <img class="text-center" src="../img/vdo1.png" alt=""> -->
-      <div class="row mt-5">
-        <div class="col-lg-4 col-sm-12">
-          <p class="hospitalName">เลือกโรงพยาบาลสัตว์</p>
-        </div>
-      
+      <img class="mt-5" style="width: 70%; height: auto; margin-left: 15%;" src="../img/pregress1.png" alt="">
+
+      <div class="mt-5">
         <div>
-          <div class="select-menu mt-3"">
-            <div class="select">
-              <p class="detailH">เลือกโรงพยาบาลสัตว์ที่คุณต้องการ</p>
-              <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div class="option-list" onchange="change()">
-              <div class="detailH option">โรงพยาบาลสัตว์A</div>
-              <div class="detailH option">โรงพยาบาลสัตว์B</div>
-              <div class="detailH option">โรงพยาบาลสัตว์C</div>
-              <div class="detailH option">โรงพยาบาลสัตว์D</div>
-            </div>
-          </div>
-        </div>
-      </div>  
+          <p class="hospitalName d-flex align-items-center">
+            <iconify-icon icon="material-symbols:location-on-outline-rounded" style="color: black;" width="40" hight="40" class="pe-1"></iconify-icon>
+            เลือกโรงพยาบาลสัตว์
+          </p>
 
-      <div class="container vet mt-5">
-        <div class="vetC">
-        <p class="hospitalName">เลือกสัตวแพทย์</p>
-        </div>
-        <div class="choose">
-          <input type="radio" id="hide" name="example" value="hide" checked />
-          <span class="checkmark"></span>
-          <label class="vetSelf detailH" for="hide">เลือกสัตวแพทย์ให้ฉัน</label>
-        </div>
-
-        <div class="choose">
-          <input type="radio" id="show" name="example" value="show" />
-          <span class="checkmark"></span>
-          <label class="vetSelf detailH" for="show">เลือกสัตวแพทย์ด้วยตัวเอง</label>
-        </div>
-
-        <div id="box">
-          <div class="select-menuT">
-            <div class="selectT">
-              <p class="hospitalName">เลือกสัตวแพทย์</p>
-              <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <div class="option-listT">
-              <div class="optionT detailH">นายสัตวแพทย์ณภัทร</div>
-              <div class="optionT detailH">นายสัตวแพทย์วิโรจน์</div>
-              <div class="optionT detailH">สัตวแพทย์หณิงเจนจิรา</div>
-              <div class="optionT detailH">นายสัตวแพทย์พลภัก</div>
-              <div class="optionT detailH">สัตวแพทย์หญิงสุนารี</div>
-            </div>
+          <div class="btn-group w-100">
+            <button type="button" class="btn btn-outline-primary dropdownButton" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownButtonHospital">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="m-0">เลือกโรงพยาบาลสัตว์ที่คุณต้องการ</p>
+                <p class="m-0 d-flex align-items-center">
+                  <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" style="color: black;" width="30" height="30"></iconify-icon>
+                </p>
+              </div>
+            </button>
+            <ul class="dropdown-menu menuHospital w-100">
+              <li><a class="dropdown-item">Action</a></li>
+              <li><a class="dropdown-item">Another action</a></li>
+              <li><a class="dropdown-item">Something else here</a></li>
+              <li><a class="dropdown-item">Separated link</a></li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div class="row" style="margin-top: 100px;">
-        <div class="col-4">
+      <div class="mt-5">
+        <p class="hospitalName d-flex align-items-center">
+          <iconify-icon icon="cil:paw" style="color: black;" width="40" hight="40" class="pe-1"></iconify-icon>
+            สัตว์เลี้ยงของคุณ
+        </p>
+
+        <div class="btn-group w-100">
+          <button type="button" class="btn btn-outline-primary dropdownButton" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownButtonPet">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="m-0">เลือกสัตว์เลี้ยงที่คุณต้องการนัดหมาย</p>
+              <p class="m-0 d-flex align-items-center">
+                <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" style="color: black;" width="30" height="30"></iconify-icon>
+              </p>
+            </div>
+          </button>
+          <ul class="dropdown-menu menuPet w-100">
+            <li><a class="dropdown-item">Action</a></li>
+            <li><a class="dropdown-item">Another action</a></li>
+            <li><a class="dropdown-item">Something else here</a></li>
+            <li><a class="dropdown-item">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <p class="hospitalName d-flex align-items-center">
+          <iconify-icon icon="majesticons:clipboard-plus-line" style="color: black;" width="40" hight="40" class="pe-1"></iconify-icon>
+            อาการของสัตว์เลี้ยง
+        </p>
+
+        <div class="btn-group w-100">
+          <button type="button" class="btn btn-outline-primary dropdownButton" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownButtonSick">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="m-0">อาการที่เกิดขึ้นกับสัตว์เลี้ยงของคุณ</p>
+              <p class="m-0 d-flex align-items-center">
+                <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" style="color: black;" width="30" height="30"></iconify-icon>
+              </p>
+            </div>
+          </button>
+          <ul class="dropdown-menu menuSick w-100">
+            <li><a class="dropdown-item">Action</a></li>
+            <li><a class="dropdown-item">Another action</a></li>
+            <li><a class="dropdown-item">Something else here</a></li>
+            <li><a class="dropdown-item">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-5">
+         <p class="hospitalName d-flex align-items-center">
+          <iconify-icon icon="uiw:date" style="color: black;" width="40" hight="40" class="pe-1"></iconify-icon>
+            จองวันและเวลา
+        </p>
+      </div>
+
+
+
+       <div class="row d-flex justify-content-between" style="margin-top: 100px;">
+        <div class="col-6">
           <a href="./vdocall.html">
             <button class="preBt">
               ย้อนกลับ
             </button>
           </a>
         </div>
-        <div class="col-4">
-
-        </div>
-        <div class="col-4">
+      
+        <div class="col-6">
           <a href="./vdocall3.html">
             <button class="nextBt">
               ต่อไป
@@ -149,6 +180,7 @@
           </a>
         </div>
       </div>  
+
     </div>
   </div>
 
@@ -169,79 +201,49 @@
       </div>  
     </footer>
 
-   <script>
-      const select = document.querySelector(".select");
-      const option_list = document.querySelector(".option-list");
-      const option = document.querySelectorAll(".option")
-      
-      //open option
-      select.addEventListener("click", () => {
-        option_list.classList.toggle("active");
-      });
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-      //choose option
-      option.forEach((options) => {
-        options.addEventListener("click", () =>{
-          option.forEach((option) => {options.classList.remove('selected')});
-          select.querySelector("span").innerHTML = options.innerHTML;
-          options.classList.add("selected")
-          option_list.classList.toggle("active");
-        });
-      });
-    </script>
+<script>
+  var dropdownButtonHospital = $("#dropdownButtonHospital");
+  var dropdownMenuHospital = $(".menuHospital");
 
-     <script>
-      const selectT = document.querySelector(".selectT");
-      const option_listT = document.querySelector(".option-listT");
-      const optionT = document.querySelectorAll(".optionT")
+  // Loop through each list item in the dropdown menu and add a click event listener
+  var listItems = dropdownMenuHospital.find("li");
+  listItems.each(function() {
+    $(this).click(function() {
+      // Update the dropdown button text with the text of the clicked list item
+      dropdownButtonHospital.text($(this).text());
+    });
+  });
+</script>
 
-      //open option
-      selectT.addEventListener("click", () => {
-        option_listT.classList.toggle("active")
-      })
-      //choose option
-      optionT.forEach((optionsT) => {
-        optionsT.addEventListener("click", () => {
-          optionT.forEach((optionT) => {optionsT.classList.remove('selected')});
-          selectT.querySelector("span").innerHTML = optionsT.innerHTML;
-          optionsT.classList.add("selected")
-          option_listT.classList.toggle("active");
-        })
-      })
-    </script>
+<script>
+  var dropdownButtonPet = $("#dropdownButtonPet");
+  var dropdownMenuPet = $(".menuPet");
 
-    <script>
-      const box = document.getElementById('box');
+  // Loop through each list item in the dropdown menu and add a click event listener
+  var listItems = dropdownMenuPet.find("li");
+  listItems.each(function() {
+    $(this).click(function() {
+      // Update the dropdown button text with the text of the clicked list item
+      dropdownButtonPet.text($(this).text());
+    });
+  });
+</script>
 
-      function handleRadioClick() {
-      if (document.getElementById('show').checked) {
-          box.style.display = 'block';
-      } else {
-          box.style.display = 'none';
-      }
-      }
+<script>
+  var dropdownButtonSick = $("#dropdownButtonSick");
+  var dropdownMenuSick = $(".menuSick");
 
-      const radioButtons = document.querySelectorAll('input[name="example"]');
-      radioButtons.forEach(radio => {
-      radio.addEventListener('click', handleRadioClick);
-      });
-    </script>
-
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin=" anonymous "
-    referrerpolicy="no-referrer "
-    ></script>
-
-    <script>
-      function change(){
-        const selected = document.getElementsByClassName('option-listT');
-        select.addEventListener('change', function handleChange(event) {
-        console.log("hello")
-        })
-      } 
-    </script>
+  // Loop through each list item in the dropdown menu and add a click event listener
+  var listItems = dropdownMenuSick.find("li");
+  listItems.each(function() {
+    $(this).click(function() {
+      // Update the dropdown button text with the text of the clicked list item
+      dropdownButtonSick.text($(this).text());
+    });
+  });
+</script>
   
 </body>
 </html>
