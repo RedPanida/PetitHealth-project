@@ -12,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
 
   <title>Petit Health</title>
 </head>
@@ -79,7 +80,74 @@
       <img class="mt-5" style="width: 70%; height: auto; margin-left: 15%;" src="../img/pregress2.png" alt="">
 
       <div class="mt-5">
+        <p style="color: #696969; font-size: 28px;">*ตรวจสอบข้อมูล</p> 
+      </div>
 
+      <div class="mt-5">
+        <div class="row">
+          <div class="col-6">
+            <p class="appointTime">ชื่อโรงพยาบาล</p> 
+            <input class="form-control detailH" type="text" id="hospitalCheck" aria-label="Disabled input example" disabled>
+          </div>
+          <div class="col-6">
+            <p class="appointTime">วันและเวลาที่นัดหมาย</p> 
+            <input class="form-control detailH" type="text" id="appointCheck" aria-label="Disabled input example" disabled>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-6">
+              <p class="appointTime">สัตว์เลี้ยงของคุณ</p> 
+              <input class="form-control detailH" type="text" id="petCheck" aria-label="Disabled input example" disabled>  
+          </div>
+          <div class="col-6">
+            <p class="appointTime">อาการของสัตว์เลี้ยง</p> 
+            <input class="form-control detailH" type="text" id="sickCheck" aria-label="Disabled input example" disabled>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="mt-3">
+          <p class="appointTime d-flex align-items-center">
+            <iconify-icon icon="ph:credit-card-bold" style="color: black;" width="40" height="40" class="me-2"></iconify-icon>เลือกช่องทางการชำระเงิน
+          </p>
+
+           <div class="btn-group w-100">
+            <button type="button" class="btn btn-outline-primary dropdownButton" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownButtonPayment">
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="m-0 detailH">ช่องทางการชำระเงิน</p>
+                <p class="m-0 d-flex align-items-center">
+                  <iconify-icon icon="material-symbols:keyboard-arrow-down-rounded" style="color: black;" width="30" height="30"></iconify-icon>
+                </p>
+              </div>
+            </button>
+            <ul class="dropdown-menu menuPayment w-100">
+              <li value="pay1"><a class="dropdown-item detailH">**** **** **** 3016</a></li>
+              <li value="pay2"><a class="dropdown-item detailH">**** **** **** 1122</a></li>
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <div class="row d-flex justify-content-between">
+              <div class="col-6">
+                <p class="detailH">ค่าบริการปรึกษาสัตวแพทย์</p>
+              </div>
+              <div class="col-6">
+                <p class="detailH text-end">350 บาท</p>
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-between">
+              <div class="col-6">
+                <p class="appointTime">ราคารวม</p>
+              </div>
+              <div class="col-6">
+                <p class="appointTime text-end">350 บาท</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
             
       <div class="row" style="margin-top: 100px;">
@@ -125,6 +193,52 @@
     referrerpolicy="no-referrer "
     >
   </script>
+
+  <script>
+      var input = document.getElementById("hospitalCheck")
+      let get_hos = localStorage.getItem("hospital")
+
+      // localStorage.setItem("hospital")
+      input.value = get_hos
+  </script>
+
+  <script>
+    var input = document.getElementById("petCheck")
+    let get_pet = localStorage.getItem("pet")
+
+    input.value = get_pet
+  </script>
+  
+  <script>
+    var input = document.getElementById("sickCheck")
+    let get_sick = localStorage.getItem("sick")
+
+    input.value = get_sick
+  </script>
+
+  <script>
+    var dropdownButtonPayment = $("#dropdownButtonPayment");
+    var dropdownMenuPayment = $(".menuPayment");
+
+    // Loop through each list item in the dropdown menu and add a click event listener
+    var listItems = dropdownMenuPayment.find("li");
+    listItems.each(function() {
+      $(this).click(function() {
+        // Update the dropdown button text with the text of the clicked list item
+        dropdownButtonPayment.text($(this).text());
+
+        var show_dropPay = dropdownButtonPayment.text()
+        console.log(show_dropPay)
+
+        localStorage.setItem("pay",show_dropPay)
+        let updatePay = localStorage.setItem("pay",show_dropPay)
+        updatePay = show_dropPay
+        localStorage.setItem("pay", show_dropPay)
+      });
+    });
+  </script>
+
+
 
   <script>
     function showDate(){

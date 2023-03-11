@@ -29,8 +29,28 @@
       <p>Some text here</p>
     </div> -->
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     
-    
+    <input type="checkbox" id="checkbox1" class="checkbox" value="Option 1"> Option 1
+    <input type="checkbox" id="checkbox2" class="checkbox" value="Option 2"> Option 2
+    <input type="checkbox" id="checkbox3" class="checkbox" value="Option 3"> Option 3
+
+    <select id="dropdown">
+      <option value="">--Select Options--</option>
+    </select>
+
+    <script>
+      $(document).ready(function() {
+      $('.checkbox').change(function() {
+        var selected = [];
+        $('.checkbox:checked').each(function() {
+          selected.push($(this).val());
+        });
+        $('#dropdown').val(selected);
+      });
+    });
+    </script>
    
     
     <!-- End Example Code -->
